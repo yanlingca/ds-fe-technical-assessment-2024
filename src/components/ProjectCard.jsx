@@ -1,4 +1,4 @@
-import HomeIcon from '../assets/img/projectcard/home-icon.svg';
+
 import '../assets/style/projectcard.css'
 
 function ProjectCard({ title, type, desc, price, repayment, img }) {
@@ -19,7 +19,6 @@ function ProjectCard({ title, type, desc, price, repayment, img }) {
         {/* Type */}
         <div className="row p-2 border-bottom projectcard-type">
           <div className="col-12">
-            <span><HomeIcon className="card-icon" /></span>
             <span className="p-2">{type}</span>
           </div>
         </div>
@@ -47,7 +46,6 @@ function ProjectCard({ title, type, desc, price, repayment, img }) {
             <button className="btn w-100 secondary-btn"
               onClick={() => document.getElementById('feature').scrollIntoView()}>
               <span>
-                <HomeIcon className="btn-icon card-icon w-15 h-15"/>
               </span>
               &nbsp; Features
             </button>
