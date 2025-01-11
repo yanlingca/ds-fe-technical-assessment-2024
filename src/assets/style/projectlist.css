@@ -13,7 +13,7 @@
     color: #000000;
 }
 .projectlist-title1{
-    font-family: 'BerlingskeSerif-Regular', Courier, monospace;
+    font-family: 'BerlingskeSerif-Regular', 'Times New Roman', Courier, monospace;
     font-size: 300%;
     color: var(--secondary-color);
     line-height: 1.4em;

@@ -19,7 +19,7 @@
     width: 100%;
 }
 .projectcard-title{
-    font-family: 'Poppins-ExtraBold', Courier, monospace;
+    font-family: 'Poppins-ExtraBold', 'Times New Roman', Courier, monospace;
     font-size: 130%;
     color: #113558ff;
 }
@@ -38,12 +38,12 @@
     font-size: 80%;
 }
 .projectcard .amount{
-    font-family: 'Poppins-ExtraBold', Courier, monospace;
+    font-family: 'Poppins-ExtraBold', 'Times New Roman', Courier, monospace;
     font-size: 110%;
     color: var(--secondary-color);
 }
 .projectcard button{
-    font-family: 'Poppins-Bold', Courier, monospace;
+    font-family: 'Poppins-Bold', 'Times New Roman', Courier, monospace;
     font-size: 90%;
     padding: 5px;
     width:90%;

@@ -1,7 +1,7 @@
 /* Footer */
 .footer{
     background-color: #06121dff;
-    font-family: 'Poppins', Courier, monospace;;
+    font-family: 'Poppins', 'Times New Roman', Courier, monospace;;
     color: var(--primary-color);
     font-size: 75%;
     padding: 0px;

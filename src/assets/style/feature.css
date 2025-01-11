@@ -9,11 +9,11 @@
     color: var(--primary-color);
   }
   .feature-title1 {
-    font-family: 'Poppins', Courier, monospace;
+    font-family: 'Poppins', 'Times New Roman', Courier, monospace;
     font-size: 100%;
   }
   .feature-title2 {
-    font-family: 'BerlingskeSerif-Regular', Courier, monospace;
+    font-family: 'BerlingskeSerif-Regular','Times New Roman', Courier, monospace;
     font-size: 300%;
     color: var(--secondary-color);
   }
@@ -24,7 +24,7 @@
     animation: blink-animation 1s ease 0s 1 normal forwards;
   }
   .feature-title3 {
-    font-family: 'Poppins', Courier, monospace;
+    font-family: 'Poppins', 'Times New Roman',Courier, monospace;
     font-size: 100%;
   }
   .feature-list{
