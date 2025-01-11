@@ -73,10 +73,7 @@ svg {
   border: solid 1px !important;
   border-color:  var(--hover-btn-color) !important;
 }
-.secondary-btn:hover .btn-icon path{
-  stroke:  var(--hover-btn-color) !important;
-  fill:  var(--hover-btn-color) !important;
-}
+
 /* For mobile */
 @media (max-width: 576px) {
   body {

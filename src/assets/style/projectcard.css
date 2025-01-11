@@ -22,9 +22,10 @@
 .projectcard .projectcard-type{
     font-size: 100%;
 }
-.projectcard .projectcard-type .card-icon{
+.projectcard .projectcard-type .type-icon{
     width: 80%;
     height: 80%;
+    color: var(--secondary-color);
 }
 .projectcard .projectcard-desc{
     font-size: 80%;
