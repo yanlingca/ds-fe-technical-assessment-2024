@@ -49,12 +49,9 @@ svg {
 }
 
 /* Content component */
-.feature, .projectlist, .regform{
+.feature, .projectlist, .regform, .banner{
   padding-top: 40px;
   padding-bottom: 40px;
-}
-.banner{
-  padding-top: 80px;
 }
 .primary-btn{
   font-family: 'Poppins-Bold', Courier, monospace !important; 
