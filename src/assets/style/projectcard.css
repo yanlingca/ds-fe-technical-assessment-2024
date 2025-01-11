@@ -10,6 +10,10 @@
 .projectcard div{
     padding: 0px;
     text-align: left;
+    overflow: hidden;
+}
+.projectcard img:hover{
+    animation: zoom-in-animation 0.5s linear 0s 1 normal forwards;
 }
 .projectcard img{
     width: 100%;

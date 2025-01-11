@@ -1,4 +1,5 @@
 import './assets/style/App.css';
+import './assets/style/animation.css';
 import './assets/style/custom-bootstrap.scss';
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
@@ -37,8 +38,6 @@ function App() {
       <Footer isMobile={IsMobileCheck()} />
     </div>
   );
-
-  
 }
 
 export default App;
