@@ -54,7 +54,7 @@ svg {
   padding-bottom: 40px;
 }
 .primary-btn{
-  font-family: 'Poppins-Bold', Courier, monospace !important; 
+  font-family: 'Poppins-Bold', 'Times New Roman', Courier, monospace !important; 
   color: var(--primary-color) !important;
   background-color: var(--secondary-color) !important;
   border: none !important;
