@@ -7,9 +7,8 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  padding-top: 10vw;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -50,9 +49,12 @@ svg {
 }
 
 /* Content component */
-.banner, .feature, .projectlist, .regform{
+.feature, .projectlist, .regform{
   padding-top: 40px;
   padding-bottom: 40px;
+}
+.banner{
+  padding-top: 80px;
 }
 .primary-btn{
   font-family: 'Poppins-Bold', Courier, monospace !important; 
