@@ -4,6 +4,7 @@
     font-family: 'Poppins', Courier, monospace;;
     color: var(--primary-color);
     font-size: 75%;
+    padding: 0px;
 }
 .footer .footer-col{
     height: auto;
@@ -37,7 +38,7 @@
     .footer-col .p-3 {
         /* Keep the content in center */
         width: 100%;
-        max-width: 50%;
+        max-width: 70%;
         margin: 0 auto;
       }
 }

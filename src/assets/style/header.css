@@ -33,11 +33,11 @@
 @media (max-width: 576px) {
     /* Register Button */
     .navbar .primary-btn {
-        width: 164px;
+        width: 130px;
         height: 56px;
     }
     .nav-item {
         padding-left: 40px;
-        background-color: #9a5d5d;
+        background-color: #eaeaea;
     }
 }

@@ -1,5 +1,6 @@
-import HomeIcon from '../assets/img/projectcard/home-icon.svg';
-import '../assets/style/projectcard.css'
+
+import '../assets/style/projectcard.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function ProjectCard({ title, type, desc, price, repayment, img }) {
     return (
@@ -16,10 +17,12 @@ function ProjectCard({ title, type, desc, price, repayment, img }) {
             <p className="projectcard-title mb-0">{title}</p>
           </div>
         </div>
-        {/* Type */}
+        {/* Type */ }
         <div className="row p-2 border-bottom projectcard-type">
           <div className="col-12">
-            <span><HomeIcon className="card-icon" /></span>
+            <span>
+              <i className="bi-house-door type-icon" style={{flexShrink: 0}}></i>
+            </span>
             <span className="p-2">{type}</span>
           </div>
         </div>
@@ -47,7 +50,7 @@ function ProjectCard({ title, type, desc, price, repayment, img }) {
             <button className="btn w-100 secondary-btn"
               onClick={() => document.getElementById('feature').scrollIntoView()}>
               <span>
-                <HomeIcon className="btn-icon card-icon w-15 h-15"/>
+                <i className="bi-house-door" style={{flexShrink: 0 }}></i>
               </span>
               &nbsp; Features
             </button>

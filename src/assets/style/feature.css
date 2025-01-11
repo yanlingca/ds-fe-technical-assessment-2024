@@ -20,6 +20,9 @@
   .feature-img img{
     width: 80vw;
   }
+  .feature-img img:hover{
+    animation: blink-animation 1s ease 0s 1 normal forwards;
+  }
   .feature-title3 {
     font-family: 'Poppins', Courier, monospace;
     font-size: 100%;
@@ -30,6 +33,9 @@
   .feature-col{
     height: auto;
     flex: 0 0 auto;
+  }
+  .feature-col:hover{
+    animation: bounce-top-animation 0.5s linear 0s 1 normal forwards;
   }
   .feature-col-content{
     justify-content: center;

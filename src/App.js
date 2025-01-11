@@ -1,4 +1,5 @@
 import './assets/style/App.css';
+import './assets/style/animation.css';
 import './assets/style/custom-bootstrap.scss';
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
@@ -25,6 +26,35 @@ function App() {
 
     return isMobile;
   };
+
+  useEffect(() => {
+    // Add offset to advoid fixed navbar cover the contents
+    const handleScroll = (e) => {
+      if (e.target.hash) {
+        e.preventDefault();
+        const target = document.querySelector(e.target.hash);
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const scrollPosition = target.offsetTop - navbarHeight;
+
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+      link.addEventListener('click', handleScroll);
+    });
+
+    // Remove the event listener
+    return () => {
+      links.forEach(link => {
+        link.removeEventListener('click', handleScroll);
+      });
+    };
+  }, []);
   
   return (
     <div>
@@ -37,8 +67,6 @@ function App() {
       <Footer isMobile={IsMobileCheck()} />
     </div>
   );
-
-  
 }
 
 export default App;

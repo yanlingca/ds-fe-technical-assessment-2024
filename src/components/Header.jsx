@@ -6,10 +6,10 @@ import '../assets/style/header.css'
 
 function Header({isMobile}) {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-white custom-nav p-3">
+    <nav id="header" className="navbar fixed-top navbar-expand-sm navbar-light bg-white custom-nav p-3">
       <div className="container-fluid">
         {/* Company Logo */}
-        <a className="navbar-brand" href="#"><img src={LogoImageFile} /></a>
+        <a className="navbar-brand" href="#header"><img src={LogoImageFile} /></a>
         
         {/* Navbar Collapse Section */}
         <div className="collapse navbar-collapse" id="navbarNav">

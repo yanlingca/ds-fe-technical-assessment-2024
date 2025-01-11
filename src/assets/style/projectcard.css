@@ -10,6 +10,10 @@
 .projectcard div{
     padding: 0px;
     text-align: left;
+    overflow: hidden;
+}
+.projectcard img:hover{
+    animation: zoom-in-animation 0.5s linear 0s 1 normal forwards;
 }
 .projectcard img{
     width: 100%;
@@ -22,9 +26,10 @@
 .projectcard .projectcard-type{
     font-size: 100%;
 }
-.projectcard .projectcard-type .card-icon{
+.projectcard .projectcard-type .type-icon{
     width: 80%;
     height: 80%;
+    color: var(--secondary-color);
 }
 .projectcard .projectcard-desc{
     font-size: 80%;
