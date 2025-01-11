@@ -31,7 +31,7 @@
     animation: fladin-animation 2s ease 0.5s 1 normal forwards;
   }
   .banner-desc{
-    font-family: 'Poppins', 'Times New Roman'', Courier, monospace;
+    font-family: 'Poppins', 'Times New Roman', Courier, monospace;
     font-size: 1.4vw;
     line-height: 1.8em;
     margin-top: 0.8em;
