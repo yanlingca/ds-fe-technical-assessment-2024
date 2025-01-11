@@ -1,0 +1,40 @@
+/* Project List */
+.projectlist{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../img/projectlist-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 30%; /* Restrict the bg to 30% of the container height */
+    background-position: center bottom; /* Position bg at the bottom */
+}
+.projectlist-content{
+    color: #000000;
+}
+.projectlist-title1{
+    font-family: 'BerlingskeSerif-Regular', Courier, monospace;
+    font-size: 300%;
+    color: var(--secondary-color);
+    line-height: 1.4em;
+}
+.projectlist-hr{
+    border-top: 3px solid var(--secondary-color);
+    width: 180px;
+}
+.projectlist-title2{
+    font-family: 'Poppins-Regular', Courier, monospace;
+    font-size: 100%;
+}
+.projectlist col{
+    height: auto;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 576px) {
+    .projectlist{
+        /* Remove bg image in mobile */
+        background-image: linear-gradient(to bottom, #f0f0f0 80%, #06121dff 20%);
+        background-size: 100% 100%;
+      }
+}

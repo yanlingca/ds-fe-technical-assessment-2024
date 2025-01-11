@@ -1,0 +1,28 @@
+/* Register Form */
+.regform .regform-title1{
+    font-family: 'BerlingskeSerif-Regular', Courier, monospace;
+    font-size: 300%;
+    color: var(--secondary-color);
+}
+.regform .regform-title2{
+    font-family: 'Poppins-Regular', Courier, monospace;
+    font-size: 100%;
+    color: #000000;
+}
+.regform .form-control:focus{
+    border-color: var(--secondary-color); 
+    box-shadow: 0 0 0 1px var(--secondary-color); 
+}
+.regform .form-control.custom-field {
+    font-family: 'Poppins-Regular', Courier, monospace;
+    color: #525252;
+    border: none; 
+    border-bottom: 1px solid #000000; /* Add bottom border */
+    border-radius: 0;
+    outline: none; /* Remove focus outline */
+    padding: 5px 5px;
+    background: transparent;
+}
+.regform .form-control.custom-field::placeholder{
+    color: #525252;
+}

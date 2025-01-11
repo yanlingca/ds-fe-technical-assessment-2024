@@ -1,0 +1,51 @@
+.projectcard{
+    font-size: small;
+    background-color: var(--primary-color);
+    min-width: 220px;
+    margin: 25px 10px 25px 10px;
+}
+.projectcard .row{
+    margin: 0px;
+}
+.projectcard div{
+    padding: 0px;
+    text-align: left;
+}
+.projectcard img{
+    width: 100%;
+}
+.projectcard-title{
+    font-family: 'Poppins-ExtraBold', Courier, monospace;
+    font-size: 130%;
+    color: #113558ff;
+}
+.projectcard .projectcard-type{
+    font-size: 100%;
+}
+.projectcard .projectcard-type .card-icon{
+    width: 80%;
+    height: 80%;
+}
+.projectcard .projectcard-desc{
+    font-size: 80%;
+}
+.projectcard .amount-title{
+    font-size: 80%;
+}
+.projectcard .amount{
+    font-family: 'Poppins-ExtraBold', Courier, monospace;
+    font-size: 110%;
+    color: var(--secondary-color);
+}
+.projectcard button{
+    font-family: 'Poppins-Bold', Courier, monospace;
+    font-size: 90%;
+    padding: 5px;
+    width:90%;
+}
+
+@media (max-width: 576px) {
+    .projectcard{
+        margin: 25px 10px 25px 10px;
+      }
+}

@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #669999ff;
+  --hover-btn-color: rgb(220, 29, 67);
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html, body{
+  overflow-x: hidden;
+}
+svg {
+  display: inline-block;
+  max-width: 18px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../fonts/Poppins-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('../fonts/Poppins-ExtraBold.otf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BerlingskeSerif-Regular';
+  src: url('../fonts/BerlingskeSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Content component */
+.banner, .feature, .projectlist, .regform{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.primary-btn{
+  font-family: 'Poppins-Bold', Courier, monospace !important; 
+  color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
+  border: none !important;
+}
+.primary-btn:hover{
+  color: var(--primary-color) !important;
+  background-color: var(--hover-btn-color) !important;
+}
+.secondary-btn{
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+.secondary-btn:hover{
+  color: var(--hover-btn-color) !important;
+  border: solid 1px !important;
+  border-color:  var(--hover-btn-color) !important;
+}
+.secondary-btn:hover .btn-icon path{
+  stroke:  var(--hover-btn-color) !important;
+  fill:  var(--hover-btn-color) !important;
+}
+/* For mobile */
+@media (max-width: 576px) {
+  body {
+    min-width: var(--mobile-width); /* Set the minimum width for mobile devices */
+  }
+}

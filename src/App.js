@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/style/App.css';
+import './assets/style/custom-bootstrap.scss';
+import React, { useState, useEffect } from 'react';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import Feature from './components/Feature';
+import ProjectList from './components/ProjectList';
+import RegForm from './components/RegForm';
+import Footer from './components/Footer';
 
 function App() {
+  function IsMobileCheck(){
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 552);
+  
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 552);
+    };
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+
+    return isMobile;
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Header Section */}
+      <Header isMobile={IsMobileCheck()} />
+      <Banner />
+      <Feature isMobile={IsMobileCheck()} />
+      <ProjectList isMobile={IsMobileCheck()} />
+      <RegForm />
+      <Footer isMobile={IsMobileCheck()} />
     </div>
   );
+
+  
 }
 
 export default App;
