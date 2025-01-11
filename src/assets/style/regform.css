@@ -26,3 +26,6 @@
 .regform .form-control.custom-field::placeholder{
     color: #525252;
 }
+.regform .primary-btn{
+    padding: 15px 40px 15px 40px;
+}
