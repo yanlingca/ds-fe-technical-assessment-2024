@@ -14,7 +14,7 @@
     box-shadow: 0 0 0 1px var(--secondary-color); 
 }
 .regform .form-control.custom-field {
-    font-family: 'Poppins-Regular', 'Times New Roman', Courier, monospace;
+    font-family: 'Poppins', 'Times New Roman', Courier, monospace;
     color: #525252;
     border: none; 
     border-bottom: 1px solid #000000; /* Add bottom border */
