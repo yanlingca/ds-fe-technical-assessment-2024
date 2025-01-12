@@ -73,7 +73,16 @@ svg {
   border: solid 1px !important;
   border-color:  var(--hover-btn-color) !important;
 }
-
+.back-to-top-btn{
+  z-index: 1000;
+  color: rgb(176, 176, 176);
+  background: none;
+  border: none;
+  opacity: 0.7;
+  border-radius: '50%';
+  font-size: 2rem;
+  padding: 0;
+}
 /* For mobile */
 @media (max-width: 576px) {
   body {
